@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Career Skill Gap Advisor - Complete Project Demo Guide</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid var(--accent);
+      margin: 20px 0;
+    }
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 32px;
+    }
+    h3 {
+      color: var(--accent);
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 14.5px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13.5px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background: var(--bg);
+    }
+    .step-card {
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .step-title {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .qna-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+    }
+    .qna-q {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .qna-a {
+      color: var(--text);
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    @media print {
+      body { padding: 0; background: white; }
+      .container { box-shadow: none; border: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Career Skill Gap Advisor</h1>
+    <div class="subtitle">Complete Project Guide, Architecture & Live Presentation Preparation Kit</div>
+    <hr>
+
+    <div class="callout">
+      <strong>🎯 DEMO READY SUMMARY:</strong> You don't need to worry! This document covers everything you need to know about the <strong>AI Career Skill Gap Advisor</strong> project. Read Section 5 for your step-by-step presentation script, and Section 6 for answers to all examiner/judge questions.
+    </div>
+
+    <h2>1. Executive Overview & Value Proposition</h2>
+    <p><strong>The Problem:</strong> Computer Science and Engineering students often face a significant gap between academic curriculum and real-world tech industry expectations.</p>
+    <p><strong>The Solution:</strong> The <strong>AI Career Skill Gap Advisor</strong> addresses this challenge by fetching and analyzing live job descriptions (such as LinkedIn postings from NVIDIA, Microsoft, etc.), automatically extracting technical skills, identifying missing skill gaps against a student's profile, and generating personalized learning roadmaps.</p>
+    <ul>
+      <li><strong>Automated Skill Match Rate:</strong> Calculates exact match percentage (e.g. 60% match) for target career roles.</li>
+      <li><strong>LinkedIn Skill Parser:</strong> Dynamic NLP algorithm categorizes skills into Required (Must-Have) vs Preferred (Nice-to-Have).</li>
+      <li><strong>Custom Posting Parser:</strong> Students can paste any custom LinkedIn job URL or raw job description text.</li>
+      <li><strong>Personalized Roadmaps:</strong> Generates step-by-step guided learning paths with estimated timelines and resources.</li>
+      <li><strong>Secure Auth System:</strong> Integrated two-factor Email OTP verification system.</li>
+    </ul>
+
+    <h2>2. System Architecture & Tech Stack</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Technologies Used</th>
+          <th>Purpose & Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Frontend UI</strong></td>
+          <td>React.js 18, Vite, Lucide React Icons, Vanilla CSS</td>
+          <td>Modern glassmorphism UI dashboard, interactive cards, skill selectors, dynamic drawers.</td>
+        </tr>
+        <tr>
+          <td><strong>Backend API</strong></td>
+          <td>Java 17, Spring Boot 3.x, Spring Data JPA</td>
+          <td>Business logic, skill extraction service, RESTful controllers, ORM repository layer.</td>
+        </tr>
+        <tr>
+          <td><strong>Database</strong></td>
+          <td>MySQL / H2, Hibernate ORM</td>
+          <td>Persists student profiles, master skills catalog, target roles, and OTP validation tokens.</td>
+        </tr>
+        <tr>
+          <td><strong>Security & Auth</strong></td>
+          <td>Spring Security, Email OTP Service (JavaMail)</td>
+          <td>Handles student onboarding, email verification via 6-digit OTP codes, and login auth.</td>
+        </tr>
+        <tr>
+          <td><strong>Extraction Engine</strong></td>
+          <td>Custom Regex & Keyword NLP Matching Service</td>
+          <td>Extracts technical skills and categorizes them by context and importance.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. Application Modules</h2>
+    <h3>Module 1: Authentication & OTP Verification</h3>
+    <p>Provides two-factor email OTP validation during registration (<code>/api/auth/send-otp</code> & <code>/api/auth/verify-otp</code>) to ensure authentic student profiles.</p>
+
+    <h3>Module 2: Student Dashboard & Profile Management</h3>
+    <p>Allows students to set their academic branch, select target roles (e.g., AI/ML Engineer, Full Stack Java Engineer), and manage acquired skills.</p>
+
+    <h3>Module 3: LinkedIn Job Skill Extraction Engine</h3>
+    <p>Fetches top-tier LinkedIn job postings or parses custom pasted job text (<code>/api/jobs/extract-skills</code>), separating skills into Must-Have (Required) and Nice-to-Have (Preferred).</p>
+
+    <h3>Module 4: Skill Gap Analyzer & Personalized Roadmap</h3>
+    <p>Computes Match Rate % (<code>acquired_skills / required_skills * 100</code>) and generates sequential learning modules with time estimates.</p>
+
+    <h2>4. REST API Endpoint Reference</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Endpoint</th>
+          <th>Method</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>/api/auth/send-otp</code></td>
+          <td><span class="badge">POST</span></td>
+          <td>Generates and emails a 6-digit OTP token for email verification.</td>
+        </tr>
+        <tr>
+          <td><code>/api/auth/verify-otp</code></td>
+          <td><span class="badge">POST</span></td>
+          <td>Validates the OTP code entered by the user.</td>
+        </tr>
+        <tr>
+          <td><code>/api/auth/register</code></td>
+          <td><span class="badge">POST</span></td>
+          <td>Registers user account in database after OTP verification.</td>
+        </tr>
+        <tr>
+          <td><code>/api/auth/login</code></td>
+          <td><span class="badge">POST</span></td>
+          <td>Authenticates email and password, returning session profile.</td>
+        </tr>
+        <tr>
+          <td><code>/api/jobs/linkedin/{roleId}</code></td>
+          <td><span class="badge">GET</span></td>
+          <td>Fetches target LinkedIn job posting and extracted skills by role ID.</td>
+        </tr>
+        <tr>
+          <td><code>/api/jobs/extract-skills</code></td>
+          <td><span class="badge">POST</span></td>
+          <td>Parses raw job description text or LinkedIn URL to extract skills on the fly.</td>
+        </tr>
+        <tr>
+          <td><code>/api/student/skills/{userId}</code></td>
+          <td><span class="badge">GET / POST</span></td>
+          <td>Retrieves or updates student's acquired skill set.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Step-by-Step Live Demo Presentation Script</h2>
+
+    <div class="step-card">
+      <div class="step-title">Step 1: Introduction (30 Seconds)</div>
+      <p><strong>Say:</strong> "Good morning everyone. Today I am presenting our project, <strong>AI Career Skill Gap Advisor</strong>. Computer Science students often find a gap between university subjects and real-world tech industry demands. Our application solves this by parsing live LinkedIn job postings from companies like NVIDIA and Microsoft, analyzing missing skill gaps, and generating personalized learning roadmaps."</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title">Step 2: Authentication & Email OTP Demo (1 Minute)</div>
+      <p><strong>Action:</strong> Open Signup modal, enter email, click 'Send OTP'.<br>
+      <strong>Say:</strong> "We built a secure authentication pipeline powered by Spring Boot and JavaMail SMTP. Before signup, students receive a 6-digit OTP code to verify email ownership."</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title">Step 3: Student Dashboard & Skill Profile (1.5 Minutes)</div>
+      <p><strong>Action:</strong> Log in, show Dashboard, branch selection, acquired skills tags.<br>
+      <strong>Say:</strong> "In the Student Dashboard, students select their academic branch and target role. They can check off skills they have already acquired, such as Python, SQL, or Java."</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title">Step 4: LinkedIn Skill Extraction & Match Rate (2 Minutes)</div>
+      <p><strong>Action:</strong> Click on <strong>LinkedIn Job Skills Card</strong>, toggle NVIDIA / Microsoft postings, click 'Parse Custom Posting'.<br>
+      <strong>Say:</strong> "Here is our core engine — the LinkedIn Skill Extractor. It parses job descriptions, separating skills into Required (Must-Have) and Preferred (Nice-to-Have). It calculates an instant Match Rate (e.g. 60%) and highlights exact missing skills."</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-title">Step 5: Personalized Roadmap & Conclusion (1 Minute)</div>
+      <p><strong>Action:</strong> Scroll to Personalized Roadmap card.<br>
+      <strong>Say:</strong> "Finally, our application generates a custom step-by-step roadmap to bridge those exact missing skills, complete with estimated completion hours and learning resources. Thank you!"</p>
+    </div>
+
+    <h2>6. Top Examiner Viva Questions & Answers</h2>
+
+    <div class="qna-card">
+      <div class="qna-q">Q1: What problem does this project solve?</div>
+      <div class="qna-a"><strong>Answer:</strong> It bridges the gap between academic education and industry job requirements by analyzing real job descriptions and giving students a personalized roadmap for missing skills.</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-q">Q2: How does the LinkedIn Skill Extractor work?</div>
+      <div class="qna-a"><strong>Answer:</strong> The backend <code>LinkedInJobService</code> uses keyword parsing and NLP regex matching to extract technical skills and categorize them into Required vs. Preferred based on context clues.</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-q">Q3: How is the Match Percentage calculated?</div>
+      <div class="qna-a"><strong>Answer:</strong> <code>Match Percentage = (Acquired Required Skills / Total Required Skills in Job Posting) * 100</code>.</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-q">Q4: What tech stack is used?</div>
+      <div class="qna-a"><strong>Answer:</strong> Frontend uses React.js 18 + Vite with custom styling. Backend uses Java 17 + Spring Boot 3 REST APIs, Spring Data JPA, and MySQL.</div>
+    </div>
+
+    <div class="qna-card">
+      <div class="qna-q">Q5: How does the OTP service work?</div>
+      <div class="qna-a"><strong>Answer:</strong> Upon request, the backend generates a random 6-digit number, stores it in the <code>OtpToken</code> table with an expiration timestamp, and sends it via email. It is validated before user registration.</div>
+    </div>
+  </div>
+</body>
+</html>

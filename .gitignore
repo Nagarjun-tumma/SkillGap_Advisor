@@ -1,0 +1,56 @@
+# ==========================================
+# Root .gitignore for AI-Career-Skill-Gap-Advisor
+# ==========================================
+
+# 1. Frontend / Node.js
+node_modules/
+Frontend/node_modules/
+dist/
+Frontend/dist/
+dist-ssr/
+Frontend/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 2. Backend / Java / Maven
+target/
+Backend/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.mvn/timing.properties
+
+# 3. Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 4. IDEs & Editors
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 5. OS Generated Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 6. Temporary & Scratch Folders
+scratch/
+tmp/
+*.tmp
+
